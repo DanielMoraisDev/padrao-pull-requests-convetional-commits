@@ -17,7 +17,8 @@
       "ci: ",
       "raw: ",
       "cleanup: ",
-      "remove: "
+      "remove: ",
+      "revert: "
     ],
     "regexp": "^(feat|fix|docs|test|build|perf|style|refactor|chore|ci|raw|cleanup|remove)(\\([a-zA-Z0-9_.-]+\\))?(!)?:\\s.*$"
   }
