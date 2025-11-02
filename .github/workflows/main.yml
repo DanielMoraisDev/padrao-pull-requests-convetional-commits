@@ -10,20 +10,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: thehanimo/pr-title-checker@v1.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: thehanimo/pr-title-checker@v1.4.3
         with:
-          types: |
-            feat
-            fix
-            docs
-            style
-            refactor
-            test
-            chore
-            build
-            ci
-            perf
-            revert
-          requireScope: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          pass_on_octokit_error: false
+          configuration_path: .github/pr-title-checker-config.json

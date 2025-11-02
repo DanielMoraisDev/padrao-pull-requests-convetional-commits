@@ -1,0 +1,25 @@
+{
+  "LABEL": {
+    "name": "Titulo fora do padrão do Convetional Commits",
+    "color": "FF0000"
+  },
+  "CHECKS": {
+    "prefixes": [
+      "feat: ",
+      "fix: ",
+      "docs: ",
+      "test: ",
+      "build: ",
+      "perf: ",
+      "style: ",
+      "refactor: ",
+      "chore: ",
+      "ci: ",
+      "raw: ",
+      "cleanup: ",
+      "remove: ",
+      "revert: "
+    ],
+    "regexp": "^(feat|fix|docs|test|build|perf|style|refactor|chore|ci|raw|cleanup|remove)(\\([a-zA-Z0-9_.-]+\\))?(!)?:\\s.*$"
+  }
+}
