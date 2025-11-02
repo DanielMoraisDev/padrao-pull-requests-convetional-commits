@@ -10,8 +10,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: thehanimo/pr-title-checker@v1.0.0
+      - uses: amannn/action-semantic-pull-request@v5
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           configuration_path: .github/pr-title-checker-config.json
-          fail_on_error: true
